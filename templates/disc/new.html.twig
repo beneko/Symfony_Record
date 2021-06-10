@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Disc{% endblock %}
+
+{% block body %}
+    <h1>Ajouter un vinyle</h1>
+
+    {{ include('disc/_form.html.twig') }}
+
+    <a href="{{ path('disc_index') }}" class="btn btn-secondary">Retour</a>
+{% endblock %}

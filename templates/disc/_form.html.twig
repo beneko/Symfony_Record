@@ -1,0 +1,11 @@
+{{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
+
+    {{ form_row(form.discTitle) }}
+    {{ form_row(form.artist) }}
+    {{ form_row(form.discYear) }}
+    {{ form_row(form.discLabel) }}
+    {{ form_row(form.discGenre) }}
+    {{ form_row(form.discPrice) }}
+    {{ form_row(form.discPicture) }}
+    <button class="btn btn-primary">{{ button_label|default('Save') }}</button>
+{{ form_end(form) }}
